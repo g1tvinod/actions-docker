@@ -4,8 +4,8 @@ ENV LANG C.UTF-8
 
 RUN \
   apt-get update && \
-  apt-get install -y wget curl zip unzip tar git python3.6 python3-pip && \
-  pip install -y kazoo pyyaml
+  apt-get install -y wget curl zip unzip tar git python3 python3-pip && \
+  pip3 install kazoo pyyaml
   
 ####INSTALL openJDK
 RUN \
