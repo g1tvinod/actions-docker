@@ -5,14 +5,12 @@ ENV LANG C.UTF-8
 RUN \
   apt-get update && \
   apt-get install -y python3.6 python3-pip && \
-  pip install -y kazoo pyyaml && \
-  rm -rf /var/lib/apt/lists/*
+  pip install -y kazoo pyyaml
  
 ######installing npm and nodejs 
 RUN \
   curl -sL https://deb.nodesource.com/setup_12.x | sudo bash - && \
-  apt-get install -y nodejs && \
-  rm -rf /var/lib/apt/lists/*
+  apt-get install -y nodejs
 
 RUN \
   cd /tmp && \
